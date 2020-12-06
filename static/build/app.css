@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;
+
+0,700;1,400&display=swap);#home_page .home_hero {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter: brightness(0.5);
+}
+
+#home_page .viewport-header {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
