@@ -1,6 +1,5 @@
 import Vue from 'vue';
 // Vue store
-import Vuex from "vuex"
 import store from "./store/index.js";
 
 

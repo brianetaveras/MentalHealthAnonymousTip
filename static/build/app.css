@@ -8,16 +8,17 @@
   position: fixed;
   top: 0;
   left: 0;
-  filter: brightness(0.5);
+  filter: brightness(0.4);
 }
 
 #home_page .viewport-header {
-  position: relative;
+  position: absolute;
   text-align: center;
   display: flex;
-  align-items: center;
-  justify-content: center;
   color: white;
   font-family: "Roboto", sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
