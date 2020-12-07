@@ -16,5 +16,16 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    .header-column{
+      width: 50%;
+    }
+    
+    @include responsive(small){
+      flex-direction: column;
+        .header-column{
+          width: 100%;
+        }
+    }
   }
 

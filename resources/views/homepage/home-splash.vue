@@ -7,17 +7,15 @@
       />
     </video>
     <header class="viewport-header container">
-      <div class="d-flex text-left w-100">
-        <div class="w-50">
+        <div class="header-column">
           <h1>Thank you for being a friend!</h1>
           <p>
             Send mental health resources to a friend in need 100% anonymously.
           </p>
         </div>
-        <div class="w-50">
+        <div class="header-column">
           <send-help-form />
         </div>
-      </div>
     </header>
   </div>
 </template>

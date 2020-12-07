@@ -22,3 +22,17 @@
   transform: translate(-50%, -50%);
 }
 
+#home_page .viewport-header .header-column {
+  width: 50%;
+}
+
+@media (max-width: 900px) {
+  #home_page .viewport-header {
+    flex-direction: column;
+  }
+
+  #home_page .viewport-header .header-column {
+    width: 100%;
+  }
+}
+

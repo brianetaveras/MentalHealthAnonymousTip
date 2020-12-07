@@ -212,8 +212,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -236,7 +234,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "#send-help-form .phone_number_input, #send-help-form .contry_select {\n  height: 50px;\n  width: 100%;\n  border-radius: 5px;\n  padding: 5px;\n  box-sizing: border-box;\n}\n#send-help-form .submit_button .submit_btn {\n  height: 50px;\n  width: 100%;\n  margin-top: 10px;\n}\n#send-help-form .btn-grad {\n  background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%);\n}\n#send-help-form .btn-grad {\n  padding: 15px 45px;\n  text-align: center;\n  text-transform: uppercase;\n  transition: 0.5s;\n  background-size: 200% auto;\n  color: white;\n  box-shadow: 0 0 20px #363636;\n  border-radius: 10px;\n  display: block;\n  border: none;\n  cursor: pointer;\n}\n#send-help-form .btn-grad:hover {\n  background-position: right center;\n  /* change the direction of the change here */\n  color: #fff;\n  text-decoration: none;\n}", ""]);
+exports.push([module.i, "#send-help-form .phone_number_input, #send-help-form .contry_select {\n  height: 50px;\n  width: 100%;\n  border-radius: 5px;\n  padding: 10px;\n  box-sizing: border-box;\n}\n#send-help-form .submit_button .submit_btn {\n  height: 50px;\n  width: 100%;\n  margin-top: 10px;\n}\n#send-help-form .btn-grad {\n  background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%);\n}\n#send-help-form .btn-grad {\n  padding: 15px 45px;\n  text-align: center;\n  text-transform: uppercase;\n  transition: 0.5s;\n  background-size: 200% auto;\n  color: white;\n  box-shadow: 0 0 20px #363636;\n  border-radius: 10px;\n  display: block;\n  border: none;\n  cursor: pointer;\n}\n#send-help-form .btn-grad:hover {\n  background-position: right center;\n  /* change the direction of the change here */\n  color: #fff;\n  text-decoration: none;\n}", ""]);
 
 // exports
 
@@ -6620,11 +6618,9 @@ var render = function() {
     ),
     _vm._v(" "),
     _c("header", { staticClass: "viewport-header container" }, [
-      _c("div", { staticClass: "d-flex text-left w-100" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c("div", { staticClass: "w-50" }, [_c("send-help-form")], 1)
-      ])
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "header-column" }, [_c("send-help-form")], 1)
     ])
   ])
 }
@@ -6633,7 +6629,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-50" }, [
+    return _c("div", { staticClass: "header-column" }, [
       _c("h1", [_vm._v("Thank you for being a friend!")]),
       _vm._v(" "),
       _c("p", [
@@ -20421,8 +20417,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/brianetaveras/projects/health/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/brianetaveras/projects/health/resources/scss/app.scss */"./resources/scss/app.scss");
+__webpack_require__(/*! /home/brianetaveras/projects/MentalHealthAnonymousTip/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/brianetaveras/projects/MentalHealthAnonymousTip/resources/scss/app.scss */"./resources/scss/app.scss");
 
 
 /***/ })
