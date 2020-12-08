@@ -20,12 +20,14 @@
   </div>
 </template>
 
-<script >
+<script>
 import SendHelpForm from "../../components/home/send-help-form/send-help-form.vue";
 export default {
   components: {
     SendHelpForm,
   },
-  mounted() {},
+  mounted() {
+   
+  },
 };
 </script>

@@ -95,8 +95,8 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _countries_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./countries.json */ "./resources/components/home/send-help-form/countries.json");
-var _countries_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./countries.json */ "./resources/components/home/send-help-form/countries.json", 1);
+/* harmony import */ var _languages_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./languages.json */ "./resources/components/home/send-help-form/languages.json");
+var _languages_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./languages.json */ "./resources/components/home/send-help-form/languages.json", 1);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.scss */ "./resources/components/home/send-help-form/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
 //
@@ -135,7 +135,7 @@ var _countries_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webp
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      countries: _countries_json__WEBPACK_IMPORTED_MODULE_0__
+      languages: _languages_json__WEBPACK_IMPORTED_MODULE_0__
     };
   }
 });
@@ -6488,10 +6488,10 @@ var render = function() {
             { staticClass: "contry_select", attrs: { name: "", id: "" } },
             [
               _c("option", { attrs: { value: "" } }, [
-                _vm._v("Select their country")
+                _vm._v("Select their preferred language")
               ]),
               _vm._v(" "),
-              _vm._l(_vm.countries, function(name, code) {
+              _vm._l(_vm.languages, function(name, code) {
                 return _c("option", { key: code, domProps: { value: code } }, [
                   _vm._v("\n          " + _vm._s(name) + "\n        ")
                 ])
@@ -20040,14 +20040,14 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./resources/components/home/send-help-form/countries.json":
+/***/ "./resources/components/home/send-help-form/languages.json":
 /*!*****************************************************************!*\
-  !*** ./resources/components/home/send-help-form/countries.json ***!
+  !*** ./resources/components/home/send-help-form/languages.json ***!
   \*****************************************************************/
-/*! exports provided: BD, BE, BF, BG, BA, BB, WF, BL, BM, BN, BO, BH, BI, BJ, BT, JM, BV, BW, WS, BQ, BR, BS, JE, BY, BZ, RU, RW, RS, TL, RE, TM, TJ, RO, TK, GW, GU, GT, GS, GR, GQ, GP, JP, GY, GG, GF, GE, GD, GB, GA, SV, GN, GM, GL, GI, GH, OM, TN, JO, HR, HT, HU, HK, HN, HM, VE, PR, PS, PW, PT, SJ, PY, IQ, PA, PF, PG, PE, PK, PH, PN, PL, PM, ZM, EH, EE, EG, ZA, EC, IT, VN, SB, ET, SO, ZW, SA, ES, ER, ME, MD, MG, MF, MA, MC, UZ, MM, ML, MO, MN, MH, MK, MU, MT, MW, MV, MQ, MP, MS, MR, IM, UG, TZ, MY, MX, IL, FR, IO, SH, FI, FJ, FK, FM, FO, NI, NL, NO, NA, VU, NC, NE, NF, NG, NZ, NP, NR, NU, CK, XK, CI, CH, CO, CN, CM, CL, CC, CA, CG, CF, CD, CZ, CY, CX, CR, CW, CV, CU, SZ, SY, SX, KG, KE, SS, SR, KI, KH, KN, KM, ST, SK, KR, SI, KP, KW, SN, SM, SL, SC, KZ, KY, SG, SE, SD, DO, DM, DJ, DK, VG, DE, YE, DZ, US, UY, YT, UM, LB, LC, LA, TV, TW, TT, TR, LK, LI, LV, TO, LT, LU, LR, LS, TH, TF, TG, TD, TC, LY, VA, VC, AE, AD, AG, AF, AI, VI, IS, IR, AM, AL, AO, AQ, AS, AR, AU, AT, AW, IN, AX, AZ, IE, ID, UA, QA, MZ, default */
+/*! exports provided: ES, EN, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"BD\":\"Bangladesh\",\"BE\":\"Belgium\",\"BF\":\"Burkina Faso\",\"BG\":\"Bulgaria\",\"BA\":\"Bosnia and Herzegovina\",\"BB\":\"Barbados\",\"WF\":\"Wallis and Futuna\",\"BL\":\"Saint Barthelemy\",\"BM\":\"Bermuda\",\"BN\":\"Brunei\",\"BO\":\"Bolivia\",\"BH\":\"Bahrain\",\"BI\":\"Burundi\",\"BJ\":\"Benin\",\"BT\":\"Bhutan\",\"JM\":\"Jamaica\",\"BV\":\"Bouvet Island\",\"BW\":\"Botswana\",\"WS\":\"Samoa\",\"BQ\":\"Bonaire, Saint Eustatius and Saba \",\"BR\":\"Brazil\",\"BS\":\"Bahamas\",\"JE\":\"Jersey\",\"BY\":\"Belarus\",\"BZ\":\"Belize\",\"RU\":\"Russia\",\"RW\":\"Rwanda\",\"RS\":\"Serbia\",\"TL\":\"East Timor\",\"RE\":\"Reunion\",\"TM\":\"Turkmenistan\",\"TJ\":\"Tajikistan\",\"RO\":\"Romania\",\"TK\":\"Tokelau\",\"GW\":\"Guinea-Bissau\",\"GU\":\"Guam\",\"GT\":\"Guatemala\",\"GS\":\"South Georgia and the South Sandwich Islands\",\"GR\":\"Greece\",\"GQ\":\"Equatorial Guinea\",\"GP\":\"Guadeloupe\",\"JP\":\"Japan\",\"GY\":\"Guyana\",\"GG\":\"Guernsey\",\"GF\":\"French Guiana\",\"GE\":\"Georgia\",\"GD\":\"Grenada\",\"GB\":\"United Kingdom\",\"GA\":\"Gabon\",\"SV\":\"El Salvador\",\"GN\":\"Guinea\",\"GM\":\"Gambia\",\"GL\":\"Greenland\",\"GI\":\"Gibraltar\",\"GH\":\"Ghana\",\"OM\":\"Oman\",\"TN\":\"Tunisia\",\"JO\":\"Jordan\",\"HR\":\"Croatia\",\"HT\":\"Haiti\",\"HU\":\"Hungary\",\"HK\":\"Hong Kong\",\"HN\":\"Honduras\",\"HM\":\"Heard Island and McDonald Islands\",\"VE\":\"Venezuela\",\"PR\":\"Puerto Rico\",\"PS\":\"Palestinian Territory\",\"PW\":\"Palau\",\"PT\":\"Portugal\",\"SJ\":\"Svalbard and Jan Mayen\",\"PY\":\"Paraguay\",\"IQ\":\"Iraq\",\"PA\":\"Panama\",\"PF\":\"French Polynesia\",\"PG\":\"Papua New Guinea\",\"PE\":\"Peru\",\"PK\":\"Pakistan\",\"PH\":\"Philippines\",\"PN\":\"Pitcairn\",\"PL\":\"Poland\",\"PM\":\"Saint Pierre and Miquelon\",\"ZM\":\"Zambia\",\"EH\":\"Western Sahara\",\"EE\":\"Estonia\",\"EG\":\"Egypt\",\"ZA\":\"South Africa\",\"EC\":\"Ecuador\",\"IT\":\"Italy\",\"VN\":\"Vietnam\",\"SB\":\"Solomon Islands\",\"ET\":\"Ethiopia\",\"SO\":\"Somalia\",\"ZW\":\"Zimbabwe\",\"SA\":\"Saudi Arabia\",\"ES\":\"Spain\",\"ER\":\"Eritrea\",\"ME\":\"Montenegro\",\"MD\":\"Moldova\",\"MG\":\"Madagascar\",\"MF\":\"Saint Martin\",\"MA\":\"Morocco\",\"MC\":\"Monaco\",\"UZ\":\"Uzbekistan\",\"MM\":\"Myanmar\",\"ML\":\"Mali\",\"MO\":\"Macao\",\"MN\":\"Mongolia\",\"MH\":\"Marshall Islands\",\"MK\":\"Macedonia\",\"MU\":\"Mauritius\",\"MT\":\"Malta\",\"MW\":\"Malawi\",\"MV\":\"Maldives\",\"MQ\":\"Martinique\",\"MP\":\"Northern Mariana Islands\",\"MS\":\"Montserrat\",\"MR\":\"Mauritania\",\"IM\":\"Isle of Man\",\"UG\":\"Uganda\",\"TZ\":\"Tanzania\",\"MY\":\"Malaysia\",\"MX\":\"Mexico\",\"IL\":\"Israel\",\"FR\":\"France\",\"IO\":\"British Indian Ocean Territory\",\"SH\":\"Saint Helena\",\"FI\":\"Finland\",\"FJ\":\"Fiji\",\"FK\":\"Falkland Islands\",\"FM\":\"Micronesia\",\"FO\":\"Faroe Islands\",\"NI\":\"Nicaragua\",\"NL\":\"Netherlands\",\"NO\":\"Norway\",\"NA\":\"Namibia\",\"VU\":\"Vanuatu\",\"NC\":\"New Caledonia\",\"NE\":\"Niger\",\"NF\":\"Norfolk Island\",\"NG\":\"Nigeria\",\"NZ\":\"New Zealand\",\"NP\":\"Nepal\",\"NR\":\"Nauru\",\"NU\":\"Niue\",\"CK\":\"Cook Islands\",\"XK\":\"Kosovo\",\"CI\":\"Ivory Coast\",\"CH\":\"Switzerland\",\"CO\":\"Colombia\",\"CN\":\"China\",\"CM\":\"Cameroon\",\"CL\":\"Chile\",\"CC\":\"Cocos Islands\",\"CA\":\"Canada\",\"CG\":\"Republic of the Congo\",\"CF\":\"Central African Republic\",\"CD\":\"Democratic Republic of the Congo\",\"CZ\":\"Czech Republic\",\"CY\":\"Cyprus\",\"CX\":\"Christmas Island\",\"CR\":\"Costa Rica\",\"CW\":\"Curacao\",\"CV\":\"Cape Verde\",\"CU\":\"Cuba\",\"SZ\":\"Swaziland\",\"SY\":\"Syria\",\"SX\":\"Sint Maarten\",\"KG\":\"Kyrgyzstan\",\"KE\":\"Kenya\",\"SS\":\"South Sudan\",\"SR\":\"Suriname\",\"KI\":\"Kiribati\",\"KH\":\"Cambodia\",\"KN\":\"Saint Kitts and Nevis\",\"KM\":\"Comoros\",\"ST\":\"Sao Tome and Principe\",\"SK\":\"Slovakia\",\"KR\":\"South Korea\",\"SI\":\"Slovenia\",\"KP\":\"North Korea\",\"KW\":\"Kuwait\",\"SN\":\"Senegal\",\"SM\":\"San Marino\",\"SL\":\"Sierra Leone\",\"SC\":\"Seychelles\",\"KZ\":\"Kazakhstan\",\"KY\":\"Cayman Islands\",\"SG\":\"Singapore\",\"SE\":\"Sweden\",\"SD\":\"Sudan\",\"DO\":\"Dominican Republic\",\"DM\":\"Dominica\",\"DJ\":\"Djibouti\",\"DK\":\"Denmark\",\"VG\":\"British Virgin Islands\",\"DE\":\"Germany\",\"YE\":\"Yemen\",\"DZ\":\"Algeria\",\"US\":\"United States\",\"UY\":\"Uruguay\",\"YT\":\"Mayotte\",\"UM\":\"United States Minor Outlying Islands\",\"LB\":\"Lebanon\",\"LC\":\"Saint Lucia\",\"LA\":\"Laos\",\"TV\":\"Tuvalu\",\"TW\":\"Taiwan\",\"TT\":\"Trinidad and Tobago\",\"TR\":\"Turkey\",\"LK\":\"Sri Lanka\",\"LI\":\"Liechtenstein\",\"LV\":\"Latvia\",\"TO\":\"Tonga\",\"LT\":\"Lithuania\",\"LU\":\"Luxembourg\",\"LR\":\"Liberia\",\"LS\":\"Lesotho\",\"TH\":\"Thailand\",\"TF\":\"French Southern Territories\",\"TG\":\"Togo\",\"TD\":\"Chad\",\"TC\":\"Turks and Caicos Islands\",\"LY\":\"Libya\",\"VA\":\"Vatican\",\"VC\":\"Saint Vincent and the Grenadines\",\"AE\":\"United Arab Emirates\",\"AD\":\"Andorra\",\"AG\":\"Antigua and Barbuda\",\"AF\":\"Afghanistan\",\"AI\":\"Anguilla\",\"VI\":\"U.S. Virgin Islands\",\"IS\":\"Iceland\",\"IR\":\"Iran\",\"AM\":\"Armenia\",\"AL\":\"Albania\",\"AO\":\"Angola\",\"AQ\":\"Antarctica\",\"AS\":\"American Samoa\",\"AR\":\"Argentina\",\"AU\":\"Australia\",\"AT\":\"Austria\",\"AW\":\"Aruba\",\"IN\":\"India\",\"AX\":\"Aland Islands\",\"AZ\":\"Azerbaijan\",\"IE\":\"Ireland\",\"ID\":\"Indonesia\",\"UA\":\"Ukraine\",\"QA\":\"Qatar\",\"MZ\":\"Mozambique\"}");
+module.exports = JSON.parse("{\"ES\":\"Español\",\"EN\":\"English\"}");
 
 /***/ }),
 

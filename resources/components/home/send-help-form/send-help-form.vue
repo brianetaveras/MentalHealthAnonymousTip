@@ -13,8 +13,8 @@
       </div>
       <div>
         <select class="contry_select" name="" id="">
-          <option value="">Select their country</option>
-          <option v-for="(name, code) in countries" :value="code" :key="code">
+          <option value="">Select their preferred language</option>
+          <option v-for="(name, code) in languages" :value="code" :key="code">
             {{ name }}
           </option>
         </select>
@@ -30,13 +30,13 @@
 </template>
 
 <script>
-import countries from "./countries.json";
+import languages from "./languages.json";
 import "./styles.scss";
 export default {
 
   data() {
     return {
-      countries: countries,
+      languages: languages,
     };
   },
 };
