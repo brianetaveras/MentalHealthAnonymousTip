@@ -8278,6 +8278,7 @@ var _languages_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webp
 //
 //
 //
+//
 
 
 
@@ -8288,14 +8289,15 @@ axios__WEBPACK_IMPORTED_MODULE_1___default.a.defaults.xsrfCookieName = "csrftoke
   data() {
     return {
       languages: _languages_json__WEBPACK_IMPORTED_MODULE_0__,
+      message_info: {
+        number: "",
+        lang: "ES"
+      }
     };
   },
   methods: {
     sendText(){
-      axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/api/sendText/', {
-        number: "+1 347 490 9007",
-        lang: "ES"
-      });
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/api/sendText/', this.message_info);
     }
   }
 });
@@ -8330,12 +8332,70 @@ var render = function() {
         }
       },
       [
-        _vm._m(0),
+        _c("div", { staticClass: "mb-2" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.message_info.number,
+                expression: "message_info.number"
+              }
+            ],
+            staticClass: "phone_number_input",
+            attrs: {
+              required: "",
+              placeholder: "Friend's Number",
+              type: "tel",
+              pattern:
+                "^(\\+\\d{1,2}\\s)?\\(?\\d{3}\\)?[\\s.-]\\d{3}[\\s.-]\\d{4}$",
+              title:
+                "Please match any of the formats: +1 000.000.0000, +1 000-000-0000, +1 000 000 0000"
+            },
+            domProps: { value: _vm.message_info.number },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.message_info, "number", $event.target.value)
+              }
+            }
+          })
+        ]),
         _vm._v(" "),
         _c("div", [
           _c(
             "select",
-            { staticClass: "contry_select", attrs: { name: "", id: "" } },
+            {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.message_info.lang,
+                  expression: "message_info.lang"
+                }
+              ],
+              staticClass: "contry_select",
+              attrs: { name: "", id: "" },
+              on: {
+                change: function($event) {
+                  var $$selectedVal = Array.prototype.filter
+                    .call($event.target.options, function(o) {
+                      return o.selected
+                    })
+                    .map(function(o) {
+                      var val = "_value" in o ? o._value : o.value
+                      return val
+                    })
+                  _vm.$set(
+                    _vm.message_info,
+                    "lang",
+                    $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+                  )
+                }
+              }
+            },
             [
               _c("option", { attrs: { value: "" } }, [
                 _vm._v("Select their preferred language")
@@ -8351,31 +8411,12 @@ var render = function() {
           )
         ]),
         _vm._v(" "),
-        _vm._m(1)
+        _vm._m(0)
       ]
     )
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mb-2" }, [
-      _c("input", {
-        staticClass: "phone_number_input",
-        attrs: {
-          required: "",
-          placeholder: "Friend's Number",
-          type: "tel",
-          pattern:
-            "^(\\+\\d{1,2}\\s)?\\(?\\d{3}\\)?[\\s.-]\\d{3}[\\s.-]\\d{4}$",
-          title:
-            "Please match any of the formats: +1 000.000.0000, +1 000-000-0000, +1 000 000 0000"
-        }
-      })
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

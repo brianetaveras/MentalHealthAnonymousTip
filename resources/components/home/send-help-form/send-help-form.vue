@@ -4,6 +4,7 @@
       <div class="mb-2">
         <input
           required
+          v-model="message_info.number"
           placeholder="Friend's Number"
           class="phone_number_input"
           type="tel"
@@ -12,7 +13,7 @@
         />
       </div>
       <div>
-        <select class="contry_select" name="" id="">
+        <select v-model="message_info.lang" class="contry_select" name="" id="">
           <option value="">Select their preferred language</option>
           <option v-for="(name, code) in languages" :value="code" :key="code">
             {{ name }}
@@ -39,14 +40,15 @@ export default {
   data() {
     return {
       languages: languages,
+      message_info: {
+        number: "",
+        lang: "ES"
+      }
     };
   },
   methods: {
     sendText(){
-      axios.post('/api/sendText/', {
-        number: "+1 347 490 9007",
-        lang: "ES"
-      });
+      axios.post('/api/sendText/', this.message_info);
     }
   }
 };

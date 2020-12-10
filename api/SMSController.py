@@ -1,23 +1,28 @@
+import os
+import json
+from .models import TextMessage
 from django.shortcuts import render
 from .SMS.SMSHandler import SMSHandler
-import json
 from django.http.response import HttpResponse
-import os
 # Create your views here.
 
 class SMSController:
 
     def SMS(request):
+        # TODO error handling/input validation
+        messageHandler = SMSHandler(os.environ["TWILIO_ACCOUNT_SID"], os.environ["TWILIO_AUTH_TOKEN"])
+       
+        request_body = json.loads(request.body)
+       
+        message_body = getMessageBody(request_body["lang"])
+       
+        messageHandler.sendMessage({
+            "number": request_body["number"],
+            "body": message_body
+        })
+        return HttpResponse("ok")
 
-        try:
-            messageHandler = SMSHandler(os.environ["TWILIO_ACCOUNT_SID"], os.environ["TWILIO_AUTH_TOKEN"])
-            message = json.loads(request.body)
-            messageHandler.sendMessage(message)
-
-            return HttpResponse("ok")
-        except Error:
-            print("Something horrible happened", Error)
-            return HttpResponse("not ok")
     
-    def getMessageBody(self, language):
-        pass
+def getMessageBody(language):
+    message = TextMessage.objects.filter(language_code=language).first()
+    return message.message_body

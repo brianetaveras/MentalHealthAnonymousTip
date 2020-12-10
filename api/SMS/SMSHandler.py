@@ -24,7 +24,7 @@ class SMSHandler:
         message = self.twilio_client.messages.create(
                     to= message["number"], 
                     from_= "+19728454955",
-                    body="Hello from Python!")
+                    body= message["body"])
                         
 
     def addMessageToQueue(self, message):
