@@ -1,6 +1,6 @@
 <template>
   <div id="send-help-form">
-    <form @submit.prevent>
+    <form @submit.prevent="sendText">
       <div class="mb-2">
         <input
           required
@@ -29,16 +29,26 @@
   </div>
 </template>
 
-<script>
+<script lang>
 import languages from "./languages.json";
+import axios from "axios";
+axios.defaults.xsrfHeaderName = "X-CSRFTOKEN"
+axios.defaults.xsrfCookieName = "csrftoken"
 import "./styles.scss";
 export default {
-
   data() {
     return {
       languages: languages,
     };
   },
+  methods: {
+    sendText(){
+      axios.post('/api/sendText/', {
+        number: "+1 347 490 9007",
+        lang: "ES"
+      });
+    }
+  }
 };
 </script>
 

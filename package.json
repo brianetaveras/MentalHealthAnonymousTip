@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@types/node": "^14.14.10",
+    "axios": "^0.21.0",
     "markdown-loader": "^6.0.0",
     "showdown": "^1.9.1",
     "ts-loader": "^8.0.11",
