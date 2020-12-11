@@ -22,19 +22,14 @@
       </div>
       <div class="submit_button">
         <button class="submit_btn btn-grad">Send Resources</button>
-        <a class="mt-2 d-flex justify-content-end" href="#"
-          >How does it work?</a
-        >
       </div>
     </form>
   </div>
 </template>
 
-<script lang>
+<script>
 import languages from "./languages.json";
 import axios from "axios";
-axios.defaults.xsrfHeaderName = "X-CSRFTOKEN"
-axios.defaults.xsrfCookieName = "csrftoken"
 import "./styles.scss";
 export default {
   data() {
@@ -42,13 +37,18 @@ export default {
       languages: languages,
       message_info: {
         number: "",
-        lang: "ES"
+        lang: "EN"
       }
     };
   },
   methods: {
     sendText(){
-      axios.post('/api/sendText/', this.message_info);
+      axios.defaults.xsrfHeaderName = "X-CSRFTOKEN"
+      axios.defaults.xsrfCookieName = "csrftoken"
+      axios.post('/api/sendText/', this.message_info)
+      .then((res) =>{
+        alert(res.data)
+      })
     }
   }
 };
