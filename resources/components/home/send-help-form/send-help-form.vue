@@ -46,6 +46,7 @@ export default {
     };
   },
   methods: {
+    // TODO Move this into the store
     sendText() {
       axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
       axios.defaults.xsrfCookieName = "csrftoken";

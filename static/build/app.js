@@ -1984,6 +1984,7 @@ var _languages_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webp
     };
   },
   methods: {
+    // TODO Move this into the store
     sendText: function sendText() {
       var _this = this;
 
