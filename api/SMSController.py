@@ -20,7 +20,6 @@ def SMS(request):
 
         hashed_number = cleanAndHashNumber(request_body["number"])
         if numberAlreadyExist(hashed_number):
-            print("skips the whole thing")
             return HttpResponse(f"Message successful")
 
         
@@ -32,7 +31,6 @@ def SMS(request):
             "body": getMessageBody(request_body["lang"]),
             "number": request_body["number"],
         })
-
         
         return HttpResponse(f"Message successful")
 
