@@ -1,5 +1,6 @@
 <template>
-  <div id="send-help-form">
+  <div id="send-help-form">`
+    <label for="">Testing</label>`
     <form @submit.prevent="sendText">
       <input type="hidden" name="csrfmiddlewaretoken" value="pHK2CZzBB323BM2Nq7DE2sxnQoBG1jPl" disabled="">
 
