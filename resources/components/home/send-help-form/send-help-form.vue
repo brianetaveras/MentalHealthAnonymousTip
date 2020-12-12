@@ -53,6 +53,7 @@ export default {
     sendText() {
       axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
       axios.defaults.xsrfCookieName = "csrftoken";
+      axios.defaults.withCredentials = true
       this.is_message_sending = true;
       axios
         .post("/api/sendText/", this.message_info)
