@@ -16,7 +16,6 @@ const outputPath = "static/build"
 mix
     .js(`resources/js/app.js`, outputPath)
     .sass('resources/scss/app.scss', outputPath)
-    .version()
     .webpackConfig({
         module: {
             rules: [
