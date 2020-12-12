@@ -31,9 +31,8 @@ environ.Env.read_env(BASE_DIR + "/.env")
 SECRET_KEY = os.environ["DJANGO_SECRET"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = ['*']
+DEBUG = os.environ["ENVIRONMENT"] == "development"
+ALLOWED_HOSTS = [os.environ["APP_URL"]]
 
 
 # Application definition
