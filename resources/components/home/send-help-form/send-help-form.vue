@@ -5,7 +5,7 @@
 
       <div class="mb-2">
         <input
-          required
+          required  
           v-model="message_info.number"
           placeholder="Friend's Number"
           class="phone_number_input"
