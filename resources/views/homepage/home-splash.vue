@@ -14,6 +14,7 @@
           </p>
         </div>
         <div class="header-column">
+          <slot/>
           <send-help-form />
         </div>
     </header>
